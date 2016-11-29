@@ -1,0 +1,11 @@
+
+nasm -f elf -g -F stabs XXX.asm
+
+nasm -f elf -g -F stabs XXX.asm -o XXX.o
+
+ld -o XXX XXX.o
+
+ld error:
+ld: i386 架构于输入文件 test.o 与 i386:x86-64 输出不兼容
+
+nasm -f elf64 -g -F stabs XXX.asm
