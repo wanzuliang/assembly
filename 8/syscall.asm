@@ -9,7 +9,7 @@
 ;
 ;使用以下命令生成：
 ;       nasm -f elf64 -g -F stabs syscall.asm
-;       ld -o eatsyscall syscall.o
+;       ld -o syscall syscall.o
 ;
 
 SECTION .data                   ; 包含已初始化数据的部分
