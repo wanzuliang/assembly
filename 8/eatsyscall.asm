@@ -1,4 +1,4 @@
-; 可执行文件名： EATSYSCALL
+; 可执行文件名： SYSCALL
 ; 版本： 1.0
 ; 创建日期： 2016/11/29
 ; 最后修改： 2016/11/29
@@ -8,13 +8,13 @@
 ;
 ;
 ;使用以下命令生成：
-;       nasm -f elf64 -g -F stabs eatsyscall.asm
-;       ld -o eatsyscall eatsyscall.o
+;       nasm -f elf64 -g -F stabs syscall.asm
+;       ld -o eatsyscall syscall.o
 ;
 
 SECTION .data                   ; 包含已初始化数据的部分
 
-Msg: db "this is text.",10
+Msg: db "wanzuliang",10
 Len: equ $-Msg
 
 SECTION .bss                    ; 包含未初始化的数据
